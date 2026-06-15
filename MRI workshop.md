@@ -1,6 +1,6 @@
 # fMRI workshop
 
-**Instructor:** Qiuyu Yu
+**Instructor:** Qiuyu Yu, Human Development and Family Science (HDFS), Auburn University
 **Contact:** qiuyuyu.psych@gmail.com
 
 # Syllabus
@@ -82,7 +82,10 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 
 - **Required**
     - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/introduction/
-    - 
+    - https://andysbrainbook.readthedocs.io/en/latest/unix/Unix_Intro.html
+- **Optional**
+    - https://missing.csail.mit.edu/ (MIT: The Missing Semester of Your CS Education)
+    - https://www.hpc-carpentry.org/ (HPC Carpentry: Intro to High-Performance Computing)
 
 ### Assignment
 
@@ -107,6 +110,11 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 - **Required**
     - https://www.youtube.com/playlist?list=PLfXA4opIOVrGHncHRxI3Qa5GeCSudwmxM Module 1-8
     - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/preprocessing-pipeline/
+    - *Principles of fMRI*: Ch 1-4 (intro, why fMRI, imaging types, brain mapping)
+- **Optional**
+    - *Principles of fMRI*: Ch 7-12 (fMRI basics & data structure, MR environment & safety, PET vs MRI, MRI physics, physiological basis, spatial/temporal resolution)
+    - Richard C. Reynolds, Daniel R. Glen, Gang Chen, Ziad S. Saad, Robert W. Cox, Paul A. Taylor; Processing, evaluating, and understanding FMRI data with afni_proc.py. Imaging Neuroscience 2024; 2 imag–2–00347. doi: https://doi.org/10.1162/imag_a_00347
+    - Esteban, O., Markiewicz, C.J., Blair, R.W. et al. fMRIPrep: a robust preprocessing pipeline for functional MRI. Nat Methods 16, 111–116 (2019). https://doi.org/10.1038/s41592-018-0235-4
 
 ### Assignment
 
@@ -125,6 +133,10 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 
 - **Required**
     - https://www.youtube.com/playlist?list=PLfXA4opIOVrGHncHRxI3Qa5GeCSudwmxM Module 13-14
+    - *Principles of fMRI*: Ch 16 (BOLD signal & noise), Ch 17 (preprocessing), Ch 21 (artifacts and noise)
+    - https://andysbrainbook.readthedocs.io/en/latest/AFNI/AFNI_Short_Course/AFNI_04_Preprocessing.html
+- **Optional**
+    - *Functional Magnetic Resonance Imaging*: Ch 8 (Signal, Noise, and Preprocessing of fMRI Data).
 
 ### Assignment
 
@@ -148,6 +160,9 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 
 - **Required**
     - https://www.youtube.com/playlist?list=PLfXA4opIOVrGHncHRxI3Qa5GeCSudwmxM Module 11-12, 15-21
+    - *Principles of fMRI*: Ch 14 (experimental design), Ch 15 (resting state & non-experimental designs), Ch 18 (GLM), Ch 19 (conditions & contrasts), Ch 20 (flexible hemodynamics & mis-modeling), Ch 23 (multiple comparisons)
+- **Optional**
+    - *Functional Magnetic Resonance Imaging*: Ch 9 (Experimental Design).
 
 ### Assignment
 
@@ -167,9 +182,11 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 - **Required**
     - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/quality-control/
     - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/rs1/
+    - Reynolds RC, Taylor PA and Glen DR (2023) Quality control practices in FMRI analysis: Philosophy, methods and examples using AFNI. Front. Neurosci. 16:1073800. doi: 10.3389/fnins.2022.1073800
+    - Paul A. Taylor, Daniel R. Glen, Gang Chen, Robert W. Cox, Taylor Hanayik, Chris Rorden, Dylan M. Nielson, Justin K. Rajendra, Richard C. Reynolds; A Set of FMRI Quality Control Tools in AFNI: Systematic, in-depth, and interactive QC with afni_proc.py and more. Imaging Neuroscience 2024; 2 imag–2–00246. doi: https://doi.org/10.1162/imag_a_00246
+    - Provins C, MacNicol E, Seeley SH, Hagmann P and Esteban O (2023) Quality control in functional MRI studies with MRIQC and fMRIPrep. Front. Neuroimaging 1:1073734. doi: 10.3389/fnimg.2022.1073734
+- **Optional**
     - https://youtube.com/playlist?list=PL_CD549H9kgoK9mGH3IVm1Ai6pB_Ns64K&si=qN-7pKMLr-WJAuKI
-- Optional
-    - 
 
 ### Assignment
 
@@ -189,7 +206,8 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 - **Required**
     - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/special-issues/
     - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/bfc/
-    - 
+    - https://discuss.afni.nimh.nih.gov/ (AFNI message board)
+    - https://neurostars.org/ (Neurostars: fMRIPrep / BIDS / general)
 
 ### Assignment
 
@@ -212,7 +230,9 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 ### Reading
 
 - **Required**
-    - 
+    - *Principles of fMRI*: Ch 22 (group analysis), Ch 24 (assessing brain connectivity), Ch 25-26 (multivariate analysis / MVPA)
+- **Optional**
+    - *Functional Magnetic Resonance Imaging*: Ch 10 (Statistical Analysis I: Basic Analyses), Ch 11 (Statistical Analysis II: Advanced Approaches).
 
 ### Assignment
 
@@ -231,7 +251,7 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 ### Reading
 
 - **Required**
-    - 
+    - *Principles of fMRI*: Ch 5 (limitations in brain-map inferences), Ch 6 (how to lie with brain imaging)
 
 ### Assignment
 
