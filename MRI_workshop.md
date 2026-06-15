@@ -1,6 +1,7 @@
 # fMRI workshop
 
 **Instructor:** Qiuyu Yu, Human Development and Family Science (HDFS), Auburn University
+
 **Contact:** qiuyuyu.psych@gmail.com
 
 # Syllabus
