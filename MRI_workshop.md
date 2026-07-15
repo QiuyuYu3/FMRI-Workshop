@@ -10,6 +10,7 @@
 
 - **This is a hands-on workshop.** You learn by running, breaking, and fixing things, not by reading alone. Feeling lost during the first couple of weeks is normal.
 - **"Required" means recommended, not mandatory.** There is a lot of material; treat the readings and assignments as strong recommendations and budget your time accordingly rather than attempting everything at once.
+- **The slides are intended to be comprehensive rather than minimal.** They deliberately include more detail than is strictly necessary on a first pass, along with some advanced asides. If a given point is unclear, set it aside and continue; full comprehension on first exposure is not expected, and later sessions do not presuppose the more advanced material.
 - **Form a study group.** Reviewing each other's assignments and progress helps you learn faster and catch mistakes earlier.
 - **Ask when you are stuck.** Use Q&A forums (e.g. Neurostars) and software-specific boards (e.g. the AFNI message board); most questions have already been asked. When posting, include a minimal reproducible example, the exact error text, and your software/container versions; this yields a useful answer far faster than a vague report.
 - **Who this is for.** This workshop is designed for true beginners: no programming experience and no prior fMRI theory or data-analysis background are required. You should, however, have a basic grasp of applied statistics and be comfortable reading papers and writing academically. No mathematics or theoretical-statistics background is needed.
@@ -69,33 +70,80 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 
 - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/introduction/
 
-## Session 1: Principles
+## Session 1: Linux essentials
 
 ### Topics
 
-- Introduction to bash, Linux, HPC.
-- Command-line essentials: paths, redirection and pipes, reading logs (grep/less/tail).
-- How to install packages, Singularity, and create an environment.
-- How to submit a job on HPC (login node vs compute node; tmux for long sessions).
-- How to use GitHub and Jupyter Notebook.
+- Introduction to bash and Linux.
+- Command-line essentials: paths, files, and scripting.
+- Redirection and pipes; reading logs (grep/less/tail).
+- Permissions and exit codes.
+
+### Reading
+
+- **Required**
+    - https://andysbrainbook.readthedocs.io/en/latest/unix/Unix_Intro.html
+    - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/introduction/
+- **Optional**
+    - https://missing.csail.mit.edu/ (MIT: The Missing Semester of Your CS Education)
+
+### Assignment
+
+- Practice moving around: `pwd`, `cd`, `ls -l`, and tell absolute from relative paths.
+- Make a folder tree with `mkdir -p`, copy/move/rename a few files, then clean up.
+- Write a tiny `.sh` script with a `for` loop, `chmod +x` it, and run it with an argument.
+- Redirect a command's output to a file and search it with `grep`.
+
+## Session 2: HPC & SLURM
+
+### Topics
+
+- HPC principles: login node vs compute node.
+- Connecting: SSH, SSH keys, and the web portal (e.g. OnDemand).
+- Storage, software modules, and moving data.
+- Submitting and monitoring jobs (arrays, GPUs, dependencies; tmux for long sessions).
+- Reading logs to debug a failed job.
 
 ### Reading
 
 - **Required**
     - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/introduction/
-    - https://andysbrainbook.readthedocs.io/en/latest/unix/Unix_Intro.html
+    - Your university's HPC wiki (login, storage, scheduler, and software modules).
 - **Optional**
-    - https://missing.csail.mit.edu/ (MIT: The Missing Semester of Your CS Education)
     - https://www.hpc-carpentry.org/ (HPC Carpentry: Intro to High-Performance Computing)
 
 ### Assignment
 
-- Submit a job.
-- Create a repository.
-- Create a Python environment. Use (or download) Singularity.
+- Log into your HPC, open a terminal, and find your home / scratch space.
+- Set up an SSH key for passwordless login.
+- Load a software module and confirm the tool is on your `PATH`.
+- Write and submit a tiny job; check its status (squeue) and resource usage (seff).
+
+## Session 3: Developer tools
+
+### Topics
+
+- How to use GitHub.
+- VS Code and Remote-SSH.
+- How to install packages, Singularity, and create an environment.
+- How to use Jupyter Notebook.
+
+### Reading
+
+- **Required**
+    - https://qiuyuyu3.github.io/fMRI-Data-Processing-Manual-on-HPC/introduction/
+    - Official getting-started docs for Git/GitHub and VS Code (Remote-SSH).
+- **Optional**
+    - Your container platform's docs (Singularity / Apptainer).
+
+### Assignment
+
+- Set your Git identity, create a GitHub repository, and push one script.
+- Connect VS Code to the HPC with Remote-SSH and open your project folder.
+- Create a Python environment (venv or conda), and use (or download) Singularity.
 - Create and run a Jupyter Notebook (via your HPC's portal, e.g. OnDemand).
 
-## Session 2: Overall Pipeline 1
+## Session 4: Overall Pipeline 1
 
 ### Topics
 
@@ -123,7 +171,7 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 - Read the documentation/landing pages of the main software (AFNI, fMRIPrep, XCP-D, etc.).
 - Survey and summarize which software fits which modality / analysis (produce a short comparison table: modality or analysis -> recommended software -> why).
 
-## Session 3: Overall Pipeline 2
+## Session 5: Overall Pipeline 2
 
 ### Topics
 
@@ -147,7 +195,7 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 - (Advanced) Write your own fMRIPrep preprocessing script.
 - Write a short Methods paragraph describing the preprocessing.
 
-## Session 4: Experimental Design and GLM
+## Session 6: Experimental Design and GLM
 
 ### Topics
 
@@ -171,7 +219,7 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 - Compute the stimulus timing files for the provided task.
 - (Optional) Build a modulated timing file (amplitude or duration), e.g. a value regressor for an RL-style task.
 
-## Session 5: Quality Control
+## Session 7: Quality Control
 
 ### Topics
 
@@ -193,7 +241,7 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 
 - Rate one subject's APQC & fMRIPrep report HTML.
 
-## Session 6: Troubleshooting
+## Session 8: Troubleshooting
 
 ### Topics
 
@@ -216,7 +264,7 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 - (Optional) Run distortion correction on one subject and judge it in QC.
 - (Optional) Re-run with a different template and compare how the results change.
 
-## Session 7: Postprocessing
+## Session 9: Postprocessing
 
 ### Topics
 
@@ -241,7 +289,7 @@ Generally, each university’s HPC team provides relevant tutorials or wikis. If
 - Find a paper you are interested in and analyze its post-processing.
 - (Optional) Run your own post-processing analysis (e.g. a group-level test with cluster correction).
 
-## Session 8: Projects and Writing
+## Session 10: Projects and Writing
 
 ### Topics
 
