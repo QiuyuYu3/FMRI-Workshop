@@ -12,18 +12,20 @@ True beginners with no programming or fMRI background. A basic grasp of applied 
 
 | # | Session | Focus | Key tools |
 |---|---------|-------|-----------|
-| 1 | Principles | Linux, HPC, dev tools | bash, SLURM, git, conda |
-| 2 | Overall Pipeline 1 | scanner, data, software | DICOM/NIfTI, BIDS, AFNI, fMRIPrep |
-| 3 | Overall Pipeline 2 | preprocessing | sswarper2, afni_proc.py |
-| 4 | Design & GLM | experimental design, modeling | stimulus timing, GLM, contrasts |
-| 5 | Quality Control | qualitative + quantitative QC | APQC, MRIQC, gen_ss_review |
-| 6 | Troubleshooting | reading logs, failure types | SLURM, containers |
-| 7 | Post-processing | secondary analysis | group, connectivity, ICA, MVPA |
-| 8 | Projects & Writing | reproducibility, Methods | NA |
+| 1 | Linux essentials | the command line | bash, paths, scripting, permissions |
+| 2 | HPC & SLURM | clusters and jobs | ssh, modules, sbatch, arrays |
+| 3 | Developer tools | version control & environments | git/GitHub, VS Code, conda, containers, Jupyter |
+| 4 | Overall Pipeline 1 | scanner, data, software | DICOM/NIfTI, BIDS, AFNI, fMRIPrep |
+| 5 | Overall Pipeline 2 | preprocessing | sswarper2, afni_proc.py |
+| 6 | Design & GLM | experimental design, modeling | stimulus timing, GLM, contrasts |
+| 7 | Quality Control | qualitative + quantitative QC | APQC, MRIQC, gen_ss_review |
+| 8 | Troubleshooting | reading logs, failure types | SLURM, containers |
+| 9 | Post-processing | secondary analysis | group, connectivity, ICA, MVPA |
+| 10 | Projects & Writing | reproducibility, Methods | NA |
 
 ## What's inside
 
-- **[Syllabus](MRI_workshop.md)** — objectives, prerequisites, and the eight sessions (topics, readings, assignments).
+- **[Syllabus](MRI_workshop.md)** — objectives, prerequisites, and the ten sessions (topics, readings, assignments).
 - **[Slides](Slides/working/)** — per-session teaching slides in Marp-compatible Markdown.
 
 ## Companion handbook
